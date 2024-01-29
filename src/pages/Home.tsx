@@ -1,7 +1,8 @@
 import studentsImg from '../assets/students.jpg';
 import listImg from '../assets/list.jpg';
 import certificateImg from '../assets/certificate.jpg';
-
+import Button from "../components/Button.tsx";
+import styles from '../index.css';
 export default function HomePage() {
   return (
     <main id="home-page">
@@ -38,6 +39,17 @@ export default function HomePage() {
             No matter if you are a beginner or an experienced React developer,
             we are here to help you level up your React skills.
           </p>
+        </div>
+      </section>
+      <section>
+        <img src={listImg} alt={"a list of sessions"}/>
+        <div>
+          <h3>My Testing Area</h3>
+        <p>
+          This is a testing area that I'll be using to determine how the page works. I'll likely include a button that will take you to a new page. I'll also
+          write something that's even more special, but it will likely not do anything.
+          <Button style={styles.button}></Button>
+        </p>
         </div>
       </section>
     </main>
